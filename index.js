@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 require('./server/server.js');
-const singleQuery = require('./constants/singleQuerys');
+const singleQuerys = require('./constants/singleQuerys');
 const client = new Discord.Client();
 const fetch = require('node-fetch');
 
@@ -20,7 +20,7 @@ client.on('message', message => {
   console.log(message.content)
   const messageSplited = message.content.split(' ')
 
-  singleQuery.map(query => {
+  singleQuerys.singleQuery().map(query => {
     if (message.content === query.command) {
 		message.channel.send(query.response);
 	}
