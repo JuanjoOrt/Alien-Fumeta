@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 require('./server/server.js');
+import singleQuery from './constants/singleQuerys'
 const client = new Discord.Client();
 const fetch = require('node-fetch');
 
@@ -19,6 +20,12 @@ client.on('message', message => {
   console.log(message.content)
   const messageSplited = message.content.split(' ')
 
+  singleQuery.map(query => {
+    if (message.content === query.command) {
+		message.channel.send(query.response);
+	}
+  })
+
   if (message.content === '!ping') {
 		console.log('pong')
 	}
@@ -32,33 +39,6 @@ client.on('message', message => {
 		message.channel.send('fumeta');
 	}
 
-  if (message.content === '!brakal') {
-		message.channel.send('https://cdn.discordapp.com/attachments/316381660725903360/754462121667854426/brakalSupermeneo.gif');
-	}
-
-  if (message.content === '!bokeron') {
-		message.channel.send('https://www.youtube.com/watch?v=Ae_2A4pCtj8');
-	}
-
-  if (message.content === '!moto') {
-		message.channel.send('https://www.twitch.tv/orslok/clip/JoyousPowerfulSpindlePanicBasket?filter=clips&range=all&sort=time');
-	}
-  
-  if (message.content === '!mujeres') {
-		message.channel.send('https://www.twitch.tv/orslok/clip/KindArborealThymeKappaClaus?filter=clips&range=7d&sort=time');
-	}
-  
-  if (message.content === '!antonio') {
-		message.channel.send('Maricón');
-	}
-  
-  if (message.content === '!poppeer') {
-		message.channel.send('https://www.warcraftlogs.com/character/eu/sanguino/poppeer');
-	}
-  
-  if (message.content === '!viernes') {
-		message.channel.send('https://twitter.com/NilGarcia10/status/1271337186676350977');
-	}
   
 });
 
