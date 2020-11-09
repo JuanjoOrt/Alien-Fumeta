@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 require('./server/server.js');
-import singleQuery from './constants/singleQuerys'
+const singleQuery = require('./constants/singleQuerys');
 const client = new Discord.Client();
 const fetch = require('node-fetch');
 
