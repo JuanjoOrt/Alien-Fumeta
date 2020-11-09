@@ -6,7 +6,7 @@ const fetch = require('node-fetch');
 const w2gLogic = async (message, text) => {
   const response = await fetch('https://w2g.tv/rooms/create.json', {method: 'POST', 
   body: { 
-    "w2g_api_key" : "af39dcef5e497058504202919cf134d081ed6cc74f7f30c1b2df38deff22f746",
+    "w2g_api_key" : "spucwwgugq7aqjjy4nyja1w37epmnzsp69qwvxxjwbeq3m6ep2q17ym3tbz527jr",
     "share" : text,  // URL of the video to share - optional
 }});
   const json = await response.json();
@@ -63,4 +63,4 @@ client.on('message', message => {
 });
 
 // login to Discord with your app's token
-client.login('Nzc0MzE1ODc0MTU1NzU3NTc4.X6V_2g.JZXuCxUrCwnR4xhMJzQ2rOxVkHo');
+client.login('af39dcef5e497058504202919cf134d081ed6cc74f7f30c1b2df38deff22f746');
