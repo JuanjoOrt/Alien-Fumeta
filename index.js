@@ -1,18 +1,5 @@
-
-
-//server
-const http = require('http');
-const express = require('express');
-const app = express();
-app.get("/", (request, response) => {
-  console.log(Date.now() + "Ping Received");
-  response.sendStatus(200);
-});
-app.listen(process.env.PORT, () => console.log("Your app is listening on port " + process.env.PORT))
-
-
-
 const Discord = require('discord.js');
+require('./server/server.js');
 const client = new Discord.Client();
 const fetch = require('node-fetch');
 
