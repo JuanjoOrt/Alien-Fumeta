@@ -35,11 +35,6 @@ client.on('message', message => {
 	
 	}
   
-	if (message.content === '!alien') {
-		message.channel.send('fumeta');
-	}
-
-  
 });
 
 // login to Discord with your app's token
