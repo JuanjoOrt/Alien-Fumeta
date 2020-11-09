@@ -11,7 +11,8 @@ module.exports = {
             {command: '!antonio', response: 'Maricón'},
             {command: '!poppeer', response: 'https://www.warcraftlogs.com/character/eu/sanguino/poppeer'},
             {command: '!viernes', response: 'https://twitter.com/NilGarcia10/status/1271337186676350977'},
+            {command: '!tense', response: 'https://media1.tenor.com/images/0d234e9b7067d6076b16663b3a2daa3c/tenor.gif?itemid=15600543'},
         ]
     } 
-
+    
   };
