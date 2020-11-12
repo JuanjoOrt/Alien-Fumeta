@@ -10,11 +10,7 @@ client.on('message', message => {
   console.log(message.content)
   const messageSplited = message.content.split(' ')
 
-  singleQuerys.singleQuery().map(query => {
-    if (message.content === query.command) {
-		message.channel.send(query.response);
-	}
-  })
+  singleQuerys.singleQuery().map(query => {if (message.content === query.command) message.channel.send(query.response)})
 
   if (message.content === '!ping') {
 		console.log('pong')
