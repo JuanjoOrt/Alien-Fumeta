@@ -3,6 +3,7 @@ require('./server/server.js');
 const singleQuerys = require('./constants/singleQuerys');
 const watchTogether = require('./watchTogether/watchTogether');
 const musicBot = require('./music/musicbot')
+import config from './config'
 
 const client = new Discord.Client();
 
@@ -41,4 +42,4 @@ client.on('message', message => {
 });
 
 // login to Discord with your app's token
-client.login('Nzc0MzE1ODc0MTU1NzU3NTc4.X6V_2g.w6EPLuU8Ju2-44ObRorsYqU9w0I');
+client.login(config.MY_API_TOKEN);
