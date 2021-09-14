@@ -34,7 +34,6 @@ client.on('message', message => {
 	}
 
   if (messageSplited[0] === '-n') {
-    message.channel.send('⚡ igual al siguiente intento te cambio de canción crack')
     musicBot.skip(message);
     return;
 	}
