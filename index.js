@@ -3,7 +3,7 @@ require('./server/server.js');
 const singleQuerys = require('./constants/singleQuerys');
 const watchTogether = require('./watchTogether/watchTogether');
 const musicBot = require('./music/musicbot')
-import config from './config'
+const config = require('./config')
 
 const client = new Discord.Client();
 
