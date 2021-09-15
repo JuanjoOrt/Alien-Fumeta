@@ -1,4 +1,3 @@
-# Alien Fumeta
 <p align="center">
 *Alien Fumeta. El único alien que habita el planeta  
 Alien Fumeta. Canutos, petardos y porros y petas  
