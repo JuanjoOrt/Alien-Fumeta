@@ -1,10 +1,10 @@
 # Alien Fumeta
-<center>
+<p align="center">
 *Alien Fumeta. El único alien que habita el planeta  
 Alien Fumeta. Canutos, petardos y porros y petas  
 Alien Fumeta. El único alien que habita el planeta  
 Alien Fumeta. Canutos, petardos y porros y petas*
-</center>
+</p>
 
 &nbsp;
 
@@ -26,7 +26,7 @@ Alien fumeta es un bot de discord realizado con la finalidad de cumplir ciertas 
 Una de las funciones principales es la generación de salas de manera automática a través de la API de la aplicación.
 
 **`-w`** - genera una sala para compartir contenido <br>
-<br><br>
+<br>
 ## Música
 El bot es capaz de reproducir música, crear colas de reproducción de canciones y parar los procesos.
 
